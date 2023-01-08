@@ -99,7 +99,7 @@ if (isset($_POST["search"])) {
                             <a href="edit.php?id=<?= $official["id"]; ?>">
                                 <i class="fa-solid fa-pen-to-square text-primary"></i> ||
                             </a>
-                            <a href="hapus.php?id=<?= $official["id"]; ?>">
+                            <a href="hapus.php?id=<?= $official["id"]; ?>" onclick="return confirm('Yakin mau di hapus?')">
                                 <i class="fa-solid fa-trash text-danger"></i>
                             </a>
                         </td>
